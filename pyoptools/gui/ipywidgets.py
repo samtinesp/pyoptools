@@ -11,6 +11,8 @@ from pyoptools.raytrace.surface import Surface
 from pyoptools.misc.pmisc import wavelength2RGB, cross, rot_x, rot_y, rot_z
 
 try:
+    import site
+    site.main()
     import pythreejs as py3js
 except ModuleNotFoundError:
     print("need py3js installed to be able to plot systems in Jupyter notebooks")
